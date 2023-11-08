@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+  background-color: #eac926;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#search {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+#search-button {
+  background: #fff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#search-button i {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.logo {
+  width: 40%;
+}
+
+ul.listas {
+  list-style: none;
+  padding: 0;
+  font-weight: normal;
+}
+
+.burger-menu {
+  display: flex;
+  background-color: #1259c3;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.compra-cuotas {
+  margin-top: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 15px;
+}
+
+.logo,
+.form {
+  display: inline-block;
+  width: 50%;
+  padding: 2%;
+}
+
+/* MAIN */
+
+h1.titulares {
+  font-size: 24px;
+  color: #666;
+}
+
+p.precios {
+  font-size: 18px;
+  margin: 0;
+}
+
+p.descuentos {
+  font-size: 16px;
+  margin: 0;
+}
+
+.description {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 20px;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s, height 0.3s, visibility 0.3s;
+  color: #666;
+}
+
+p.nombre-producto {
+  font-size: 16px;
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+main section div.products article i {
+  transition: transform 1s;
+}
+
+main section div.products article:hover i {
+  transform: rotate(-90deg);
+}
+
+article div.main-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+main section div.products article i {
+  transition: transform 1s;
+}
+
+main section div.products article:hover i {
+  transform: rotate(-90deg);
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+  margin-bottom: 5%;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  color: #39b54a;
+  padding-left: 10%;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+/* FOOTER */
+
+p.icono-tarjeta i{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p.icono-regalo i{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p.icono-seguridad i{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p.forma-pago {
+  margin: 0;
+}
+
+h3.forma-pago {
+  text-align: center;
+  margin: 0;
+  padding-top: 0.3rem;
+}
+
+footer {
+  background-color: white;
+  color: #666;
+}
+
+.footer-box {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.copyright {
+  margin-left: 5%;
+  padding-bottom: 1rem;
+}
+
+.footer-box .icono-tarjeta i,
+.footer-box .icono-regalo i,
+.footer-box .icono-seguridad i {
+  color: #1259c3;
+}
+
+.footer-box .icono-tarjeta i:hover,
+.footer-box .icono-regalo i:hover,
+.footer-box .icono-seguridad i:hover {
+  color: #eac926; /* Cambia el color a tu elección */
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+}
+
+/* Media query para dispositivos tablet */
+@media screen and (min-width: 576px) {
+  main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main section div.products article {
+    width: 45%;
+  }
+
+  .price,
+  .discount {
+    width: 50%;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  ul.listas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  ul.listas li {
+    margin-right: 15px;
+    font-size: small;
+  }
+  
+  .compra-cuotas,
+  .logo,
+  .form {
+    display: inline-block;
+    width: 30%;
+  }
+
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-bottom: 0px;
+  }
+
+  main section article:hover .description {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+  }
+}
+
+/* Media query para desktop  */
+@media screen and (min-width: 992px) {
+  .top-header {
+    margin-bottom: 10px;
+  }
+
+  article {
+    width: 20%;
+  }
+
+  ul.listas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  ul.listas li {
+    margin-right: 15px;
+    font-size: large;
+  }
+
+  .compra-cuotas,
+  .logo,
+  .form {
+    display: inline-block;
+    width: 30%;
+  }
+
+  main section div.products article {
+    width: 22%;
+  }
+
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-bottom: 0px;
+  }
+
+  main section article:hover .description {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+  }
+
+  .footer-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px
+  }
+
+  div.pagos,
+  div.envios,
+  div.seguridad {
+    padding: 2rem;
+  }
+}
