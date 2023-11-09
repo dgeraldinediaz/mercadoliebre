@@ -125,6 +125,7 @@ main {
   flex-wrap: nowrap;
   flex-direction: column;
   text-align: center;
+  font-size: large;
 }
 
 .logo,
@@ -296,6 +297,16 @@ footer {
   div.envios,
   div.seguridad {
     padding: 2rem;
+  }
+
+  input.inputs {
+    width: 40%;
+    font-size: large;
+  }
+  
+  input.enviar {
+    width: 40%;
+    font-size: large;
   }
 
 }
