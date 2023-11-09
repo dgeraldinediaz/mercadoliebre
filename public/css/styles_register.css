@@ -298,5 +298,10 @@ input[type='file']{
     padding: 2rem;
   }
 
+  footer{
+    position: fixed;
+    bottom: 0px;
+  }
+  
 }
 

@@ -4,7 +4,6 @@
 }
 
 body {
-  background-color: #ebebeb;
   margin: 0;
 }
 
@@ -95,37 +94,20 @@ nav {
   padding: 2%;
 }
 
-/* FOOTER */
 
-footer {
-  background-color: white;
-  color: #666;
-}
-
-.footer-box {
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-left: 12%;
-  margin-right: 12%;
-}
-
-.copyright {
-  margin-left: 5%;
-  padding-bottom: 1rem;
-}
 
 /* MAIN */
 
 main {
   width: 100%;
-  margin-top: 1%;
   margin-bottom: 3%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   text-align: center;
   font-size: large;
+  padding: 5%;
+  background-color: #ebebeb;
 }
 
 .logo,
@@ -231,6 +213,26 @@ footer {
   color: #eac926; /* Cambia el color a tu elección */
 }
 
+footer {
+  background-color: white;
+  color: #666;
+}
+
+.footer-box {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.copyright {
+  margin-left: 5%;
+  padding-bottom: 1rem;
+}
+
+
+/* Media query para moviles */
 @media screen and (max-width: 575px) {
   nav {
     display: none;
