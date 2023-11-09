@@ -299,8 +299,8 @@ input[type='file']{
   }
 
   footer{
-    position: fixed;
-    bottom: 0px;
+    display: fixed;
+    bottom: 0
   }
   
 }
