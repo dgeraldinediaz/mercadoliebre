@@ -147,6 +147,8 @@ input.inputs {
   border-radius: 5px;
   overflow: hidden;
   background-color: #ffffff;
+  width: 100%;
+  font-size: large;
 }
 
 /* FOOTER */
@@ -277,6 +279,10 @@ input[type='file']{
   .form {
     display: inline-block;
     width: 30%;
+  }
+
+  input.inputs {
+    width: 150%;
   }
 
   .footer-box {

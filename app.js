@@ -13,8 +13,9 @@ app.use(express.static(publicPath));
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en el puerto ${port}`);
-
 });
+
+
 
 app.get("/", function (req, res){
     let htmlPath = path.resolve("./views/home.html");
