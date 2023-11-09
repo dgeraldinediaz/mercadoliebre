@@ -83,8 +83,8 @@
           placeholder="Nombre y apellido"
           pattern="[A-Za-z\s]+"
           title="Solo se permiten letras y espacios"
-          required
-        />
+          required/>
+        <span class="mensaje">Solo se permiten letras y espacios.</span>
         <br />
         <br />
         <input
@@ -97,9 +97,11 @@
           title="De 4 a 16 caracteres alfanuméricos o guiones bajos"
           required
         />
+        <span class="mensaje">De 4 a 16 caracteres alfanuméricos o guiones bajos</span>
         <br />
         <br />
         <input class="inputs" type="email" name="email" placeholder="E-mail" />
+        <span class="mensaje">Debe contener @gmail.com</span>
         <br />
         <br />
         <label for="birth_date"><b>Fecha de nacimiento</b></label>
@@ -121,6 +123,7 @@
           required
           pattern="[a-zA-Z0-9\s.,#-]+"
         />
+        
         <h4>Perfil del usuario</h4>
         <div class="perfil">
           <input type="radio" name="perfil" value="comprar" id="comprar" />
@@ -168,6 +171,7 @@
           pattern="^(?=.[A-Z])(?=.[a-z])(?=.\d).{8,}$"
           title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número"
         />
+        <span class="mensaje">Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número</span>
         <h4>Confirmá tu contraseña</h4>
         <input
           class="inputs"
@@ -179,6 +183,7 @@
           oninput="validarContraseña()"
           title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número"
         />
+        <span class="mensaje">Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número</span>
         <div id="mensaje-contraseña"></div>
         <br />
         <h4>Confirmá tu registro</h4>
